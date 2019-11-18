@@ -1,0 +1,42 @@
+.navbar{
+	width: 100%;
+	background-color: #ACC8DE;
+    display: flex;
+	align-items: center;
+	padding-left: 0.6em;
+	padding-right: 1.5em;
+
+}
+h1{
+	color: #1870B4;
+}
+
+.navbar_liens a
+{
+	text-decoration: none;
+	font-size: 1.4em;
+	color: #DEE8F0;
+}
+
+.navbar_liens a:hover
+{
+	text-decoration: none;
+	font-size: 1.4em;
+	color: #0762AA;
+}
+
+.navbar_liens ul
+{
+	list-style: none;
+	display: flex;
+	
+}
+.navbar_liens li
+{
+	padding-left: 2em;
+	
+}
+
+.espace{
+	flex : 1;
+}

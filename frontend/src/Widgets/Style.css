@@ -1,0 +1,11 @@
+.drapeau img{
+	height: 150px;
+	width: 150px;
+}
+.drapeau {
+	font-size: 1em;
+}
+.date{
+	text-align: center;
+	font-size: 1.3em;
+}
