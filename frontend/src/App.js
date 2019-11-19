@@ -7,47 +7,48 @@ import Calendrier from './Widgets/Calendrier';
 import Navbar from './Navbar';
 import Radial from './Widgets/Radial';
 import Percent from './Widgets/Percent';
+import { Button } from 'reactstrap';
 
 class App extends Component {
 	render() {
 		return (
 
 			<div className="page">
-			<header>
-			
-			<div className="navbar">
-			<Navbar />
-			</div>
-			
-			</header>
+				<header>
 
-			<div className="widgets">
+					<div className="navbar">
+						<Navbar />
+					</div>
+					
+				</header>
 
-			<div className="date">
-			<Calendrier />
-			</div>
+				<div className="widgets">
 
-			<div className="heure">
-			<Heure />
-			</div>
+					<div className="date">
+						<Calendrier />
+					</div>
 
-			<div className="barre">
-			<Barre />
-			</div>
+					<div className="heure">
+						<Heure />
+					</div>
 
-			<div className="drapeau">
-			<Drapeau />
-			</div>
+					<div className="barre">
+						<Barre />
+					</div>
 
-			<div className="radial">
-				<Radial />
-			</div>
+					<div className="drapeau">
+						<Drapeau />
+					</div>
 
-			<div className="percent">
-				<Percent />
-			</div>
+					<div className="radial">
+						<Radial />
+					</div>
 
-			</div>
+					<div className="percent">
+						<Percent />
+					</div>
+
+				</div>
 			</div>
 		);
 	}
