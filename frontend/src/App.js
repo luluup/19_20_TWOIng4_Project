@@ -5,11 +5,12 @@ import Barre from './Widgets/Barre';
 import Drapeau from './Widgets/Drapeau';
 import Calendrier from './Widgets/Calendrier';
 import Navbar from './Navbar';
+import Radial from './Widgets/Radial';
+import Percent from './Widgets/Percent';
 
 class App extends Component {
 	render() {
 		return (
-
 
 			<div className="page">
 			<header>
@@ -36,6 +37,14 @@ class App extends Component {
 
 			<div className="drapeau">
 			<Drapeau />
+			</div>
+
+			<div className="radial">
+				<Radial />
+			</div>
+
+			<div className="percent">
+				<Percent />
 			</div>
 
 			</div>

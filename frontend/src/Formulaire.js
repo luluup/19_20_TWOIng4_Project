@@ -1,11 +1,8 @@
-import React, {Component} from 'react';
-import './Navbar.css';
+import React, { Component } from 'react';
 
-
-class Navbar extends Component{
-	render()
-	{
-		return(
+class Formulaire extends Component {
+    render() {
+        return (
                 <div className="navbar">
                     <div className="navbar_titre">
                         <h1>Météo des plages </h1>
@@ -15,13 +12,12 @@ class Navbar extends Component{
                     <div className="navbar_liens">
                         <ul>
                             <li><a href ="/"> Dashboard </a></li>
-                            <li><a href ="./Formulaire.js"> Formulaire </a> </li>
+                            <li><a href ="/"> Formulaire </a> </li>
                         </ul>
                     </div>
                 </div>
-		);
-	}
+        );
+    }
 }
-export default Navbar;
 
-
+export default Formulaire;
