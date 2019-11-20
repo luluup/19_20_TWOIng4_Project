@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import './App.css';
 import Heure from './Widgets/Heure';
 import Barre from './Widgets/Barre';
@@ -8,6 +9,7 @@ import Navbar from './Navbar';
 import Radial from './Widgets/Radial';
 import Percent from './Widgets/Percent';
 import { Button } from 'reactstrap';
+import Formulaire from './Formulaire';
 
 class App extends Component {
 	render() {
@@ -19,35 +21,41 @@ class App extends Component {
 					<div className="navbar">
 						<Navbar />
 					</div>
-					
+
+					<div className="formulaire">
+						<Formulaire />
+					</div>
+
 				</header>
 
 				<div className="widgets">
+					<Container>
+						<Row>
+							<Col> <div className="date">
+								<Calendrier />
+							</div></Col>
 
-					<div className="date">
-						<Calendrier />
-					</div>
+							<Col><div className="heure">
+								<Heure />
+							</div></Col>
+						</Row>
+						<div className="barre">
+							<Barre />
+						</div>
 
-					<div className="heure">
-						<Heure />
-					</div>
+						<div className="drapeau">
+							<Drapeau />
+						</div>
 
-					<div className="barre">
-						<Barre />
-					</div>
-
-					<div className="drapeau">
-						<Drapeau />
-					</div>
-
-					<div className="radial">
-						<Radial />
-					</div>
-
-					<div className="percent">
-						<Percent />
-					</div>
-
+						<Row>
+							<Col><div className="radial">
+							<Radial />
+						</div> </Col>
+							<Col><div className="percent">
+							<Percent />
+						</div> </Col>
+						</Row>
+					</Container>
 				</div>
 			</div>
 		);

@@ -1,23 +1,33 @@
 import React, { Component } from 'react';
+import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
 
 class Formulaire extends Component {
-    render() {
-        return (
-                <div className="navbar">
-                    <div className="navbar_titre">
-                        <h1>Météo des plages </h1>
-                    </div>
-
-                    <div className="espace" />
-                    <div className="navbar_liens">
-                        <ul>
-                            <li><a href ="/"> Dashboard </a></li>
-                            <li><a href ="/"> Formulaire </a> </li>
-                        </ul>
-                    </div>
-                </div>
-        );
-    }
+  render() {
+    return (
+      <div className="formulaire">
+        <InputGroup>
+          <InputGroupAddon addonType="append">
+            <InputGroupText>Nom</InputGroupText>
+          </InputGroupAddon>
+          <Input />
+        </InputGroup>
+        <br />
+        <InputGroup>
+          <InputGroupAddon addonType="append">
+            <InputGroupText>Prenom</InputGroupText>
+          </InputGroupAddon>
+          <Input />
+        </InputGroup>
+        <br />
+        <InputGroup>
+          <InputGroupAddon addonType="append">
+            <InputGroupText>Email</InputGroupText>
+          </InputGroupAddon>
+          <Input />
+        </InputGroup>
+      </div>
+    );
+  }
 }
 
 export default Formulaire;

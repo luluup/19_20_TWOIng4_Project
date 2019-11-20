@@ -15,7 +15,7 @@ class Navbar extends Component{
                     <div className="navbar_liens">
                         <ul>
                             <li><a href ="/"> Dashboard </a></li>
-                            <li><a href ="./Formulaire.js"> Formulaire </a> </li>
+                            <li><a href ="/Formulaire.js"> Formulaire </a> </li>
                         </ul>
                     </div>
                 </div>

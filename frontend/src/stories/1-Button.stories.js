@@ -9,9 +9,13 @@ export default {
 export const text = () => <Button onClick={action('clicked')}>Hello Button</Button>;
 
 export const emoji = () => (
+  <div>
+<p>Mon bouton, ma doc</p>
   <Button onClick={action('clicked')}>
     <span role="img" aria-label="so cool">
       😀 😎 👍 💯
     </span>
   </Button>
+  </div>
+  
 );
