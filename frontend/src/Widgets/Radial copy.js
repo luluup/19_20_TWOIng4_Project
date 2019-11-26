@@ -17,7 +17,7 @@ export default class Radail extends PureComponent {
   state = {
         data = [
       {
-        name: '18-24', uv: 31.47, pv: 2400, fill: '#8884d8',
+        name: '', uv: '', pv: '', fill: '#8884d8',
       },
       {
         name: '25-29', uv: 26.69, pv: 4567, fill: '#83a6ed',

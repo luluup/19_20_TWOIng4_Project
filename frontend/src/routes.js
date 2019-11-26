@@ -7,7 +7,7 @@ export default (props) => (
 
     <Switch>
 
-        <Route path='/' exact component={Home} />
+        <Route path='/formulaire' exact component={Formulaire} />
 
     </Switch>
 
