@@ -12,7 +12,7 @@ class UserProfil extends Component {
             houseSize: 200,
 
             userName: "Dimitry",
-            avatar: "https://media.giphy.com/media/11TyfGbDbBv4be/giphy.gif"
+            avatar: "http://ekladata.com/tUPX6FQvC5K8c8QGgkhN051Pdvk.jpg"
         }
     }
 
