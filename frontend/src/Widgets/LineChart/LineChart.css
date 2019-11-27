@@ -1,10 +1,12 @@
-.heure{
-    background-color: rgb(204, 192, 250);
-    width: 10em;
+.line{
+    background-color: rgb(184, 211, 252);
+    width: 15em;
     margin-top: 2em;
     box-shadow:1px 1px 3px rgba(153, 153, 153, 0.445);
     border-radius: 0.5em;
+}
 
+.titre{
     text-align: center;
     font:1em Arial;
     font-weight: bolder;

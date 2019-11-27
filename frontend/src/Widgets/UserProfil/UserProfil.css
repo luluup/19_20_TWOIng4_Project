@@ -1,10 +1,22 @@
 .profil{
-    background-color: dodgerblue;
-    color: floralwhite;
-    font-size: 100%;
+        background-color: rgb(215, 201, 248);
+        width: 20em;
+        height: 30em;
+        margin-left: 2em;
+        margin-top: 2em;
+        margin-bottom: 3em;
+        box-shadow:1px 1px 3px rgba(153, 153, 153, 0.445);
+        border-radius: 0.5em;
+        text-align: center;
+
+        text-align: center;
+        font:1em Arial;
+        font-weight: bolder;
+        color: whitesmoke;
 }
 
 .userAvatar{
-    width: 15em;
-    margin-left: 7em;
+    width: 20em;
+    height: 15em;
+    border-radius: 0.25em;
 }

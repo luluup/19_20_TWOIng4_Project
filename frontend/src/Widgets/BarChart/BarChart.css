@@ -1,0 +1,8 @@
+.bar{
+    background-color: rgb(86, 135, 209);
+    width: 35em;
+    margin-top: 2em;
+    margin-left: 2px;
+    box-shadow:1px 1px 3px rgba(202, 170, 170, 0.445);
+    border-radius: 0.5em;
+}

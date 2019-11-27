@@ -1,8 +1,6 @@
 import React from "react";
-
 import { storiesOf } from "@storybook/react";
-
-import UserProfil from "../Widgets/UserProfil"
+import UserProfil from "../Widgets/UserProfil/UserProfil"
 
 export const userProfil = {
     userID: 1,
@@ -11,7 +9,7 @@ export const userProfil = {
     houseSize: 200,
 
     userName: "Dimitry",
-    avatar: "https://starsinformer.com/wp-content/uploads/2019/04/Greta-Thunberg.jpg"
+    avatar: "hhttps://media.giphy.com/media/11TyfGbDbBv4be/giphy.gif"
 };
 
 storiesOf('UserProfil', module)

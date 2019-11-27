@@ -5,5 +5,5 @@ import Temperature from "../Widgets/Temperature";
 
 
 
-storiesOf('Temperature', module)
-    .add('default', () => <Temperature temp=10/>);
+//storiesOf('Temperature', module)
+    //.add('default', () => <Temperature temp=10/>);
