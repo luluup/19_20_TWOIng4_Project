@@ -1,0 +1,10 @@
+.profil{
+    background-color: dodgerblue;
+    color: floralwhite;
+    font-size: 100%;
+}
+
+.userAvatar{
+    width: 15em;
+    margin-left: 7em;
+}
