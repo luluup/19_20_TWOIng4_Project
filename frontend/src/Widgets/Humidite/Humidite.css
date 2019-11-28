@@ -1,0 +1,13 @@
+.icon_humidite img {
+	height: 90px;
+}
+.humidite{
+	background-color: rgb(215, 201, 248);
+	box-shadow:1px 1px 3px rgba(153, 153, 153, 0.445);
+	border-radius: 0.5em;
+	text-align: center;
+	text-align: center;
+	font-weight: bolder;
+	color: whitesmoke;
+
+}

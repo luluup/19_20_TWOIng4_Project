@@ -10,7 +10,6 @@ class UserProfil extends Component {
             country: "France",
             personsInHouse: 4,
             houseSize: 200,
-
             userName: "Dimitry",
             avatar: "http://ekladata.com/tUPX6FQvC5K8c8QGgkhN051Pdvk.jpg"
         }
@@ -36,7 +35,6 @@ class UserProfil extends Component {
                    Taille de la maison : {this.state.houseSize}
                 </p>
             </div>
-
         );
     }
 }
