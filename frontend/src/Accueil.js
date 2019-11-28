@@ -7,7 +7,8 @@ import UserProfil from './Widgets/UserProfil/UserProfil';
 import LineChart from './Widgets/LineChart/LineChart';
 import BarChart from './Widgets/BarChart/BarChart';
 import Temperature from './Widgets/Temperature/Temperature';
-import Humidite from './Widgets/Humidite/Humidite';
+import AirPollution from './Widgets/AirPollution/AirPollution';
+import Humidite from './Widgets/Humidite/Humidite'
 
 import './Accueil.css';
 
@@ -19,51 +20,48 @@ class Accueil extends Component {
 		return (
 
 			<div className="container-fluid">
-
 				<div className="Accueil">
 
 					<div className="row">
 
-							<div className="col-4">
-								<UserProfil />
-						      </div>
-			 
-			
-						 <div className="col-8">
-									<div className="row justify-content-center">
-	
-			
-												<div className="col-5">
-													<Temperature />
-												</div>
-			                         
+						<div className="col-4">
+							<UserProfil />
+						</div>
 
-												<div className="col-5">
-													<Humidite />
-												</div>
-									  </div>
-			                         
-			
-									  <div className="row justify-content-center" >
-											<div className="col-10">
-												<BarChart />
-											</div> 
-									  </div>
-						   </div>
-                      </div>
-					
-						
-						
-			
+						<div className="col-8">
+							<div className="row justify-content-center">
+
+								<div className="col-5">
+									<Temperature />
+								</div>
+
+								<div className="col-5">
+									<AirPollution />
+								</div>
+							</div>
+
+							<div className="row justify-content-center">
+								<div className="col-7">
+									<Humidite />
+								</div>
+
+								<div className="col-3">
+									<Heure />
+								</div>
+							</div>
+
+
+							<div className="row justify-content-center" >
+								<div className="col-10">
+									<LineChart />
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<div>
-					<LineChart />
+						<BarChart />
 					</div>
-
-					<div className="Heure">
-					<Heure />
-					</div>
-
 
 				</div>
 			</div>

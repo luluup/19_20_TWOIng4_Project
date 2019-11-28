@@ -31,8 +31,8 @@ export default class LineChartW extends PureComponent {
       <div className = "line">
         <p className="titre">Humidité</p>
         <LineChart
-          width={200}
-          height={100}
+          width={500}
+          height={200}
           data={data}
         >
           <CartesianGrid strokeDasharray="3 3" />

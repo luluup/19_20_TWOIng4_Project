@@ -32,8 +32,8 @@ class Heure extends Component{
 
 		return(
 			<div className="heure">
-			<p>Heure</p>
-			<p>{this.state.heure.toLocaleTimeString()}</p>
+			<p className="titre">Heure</p>
+			<p className="titre">{this.state.heure.toLocaleTimeString()}</p>
 			</div>
 		);
 

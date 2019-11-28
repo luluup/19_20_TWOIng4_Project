@@ -11,7 +11,7 @@ class UserProfil extends Component {
             personsInHouse: 4,
             houseSize: 200,
 
-            userName: "Dimitry",
+            userName: "Stitch",
             avatar: "https://media.giphy.com/media/11TyfGbDbBv4be/giphy.gif"
         }
     }
@@ -31,6 +31,9 @@ class UserProfil extends Component {
 
                 <p>
                    Pays : {this.state.country}
+                </p>
+                <p>
+                   Nombre d'habitants dans la maison : {this.state.personsInHouse}
                 </p>
                 <p>
                    Taille de la maison : {this.state.houseSize}

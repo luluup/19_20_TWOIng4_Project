@@ -77,7 +77,7 @@ export default class BarChartW extends PureComponent {
             <div className="bar">
                 <p className = "titre">Températures minimales/maximales des 3 derniers mois par pays</p>
                 <BarChart
-                    width={500}
+                    width={1000}
                     height={300}
                     data={data}
                     margin={{

@@ -1,13 +1,12 @@
-.icon_temperature img {
-	height: 100px;
+.icon_pollution img {
+	height: 90px;
 }
-.temperature{
-	background-color: #f8f9f9;
+.airpollution{
+	background-color: rgb(240, 239, 241);
 	box-shadow:1px 1px 3px rgba(153, 153, 153, 0.445);
 	border-radius: 0.5em;
 	text-align: center;
 	text-align: center;
-	font:1em Arial;
 	font-weight: bolder;
 	margin-top: 2em;
 
