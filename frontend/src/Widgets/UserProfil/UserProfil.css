@@ -1,18 +1,27 @@
-.profil{
-    background-color: #f8f9f9;
-        box-shadow:1px 1px 3px rgba(153, 153, 153, 0.445);
-        border-radius: 0.5em;
-        text-align: center;
-        text-align: center;
-        font:1em Arial;
-        font-weight: bolder;
-        margin-top: 2em;
-        margin-left: 2em;
+.profil {
+    background-color: rgb(240, 239, 241);
+    box-shadow: 2px 2px 2px rgba(153, 153, 153, 0.445);
+    border-radius: 0.5em;
+    text-align: center;
+    padding-bottom: 1.9em;
+    margin-top: 5em;
+    margin-left: 5em;
+    font-family: 'Times New Roman', sans-serif;
+    color: #000000;
+    font-size: 1em;
 }
 
+@media (max-width: 768px) {
+    .profil {
+        margin-right: 5em;
+    }
+}
 
-.userAvatar{
-    width: 18.7em;
-    height: 15em;
+.infos{
+    margin-top:2.2em;
+}
+
+.photo img{
+    width: 100%;
     border-radius: 0.25em;
 }

@@ -19,52 +19,55 @@ class Accueil extends Component {
 	render() {
 		return (
 
-			<div className="container-fluid">
-				<div className="Accueil">
+            <div className="container-fluid">
+                <div className="row">
 
 					<div className="row">
 
-						<div className="col-4">
+						<div className="col-md-4 col-xs-12">
 							<UserProfil />
 						</div>
 
-						<div className="col-8">
+						<div className="col-md-8 col-xs-12">
 							<div className="row justify-content-center">
 
-								<div className="col-5">
+								<div className="col-md-5 col-xs-3">
 									<Temperature />
 								</div>
 
-								<div className="col-5">
+                                <div className="col-md-5 col-xs-3">
 									<AirPollution />
 								</div>
 							</div>
 
 							<div className="row justify-content-center">
-								<div className="col-7">
+								<div className="col-md-7 col-xs-12">
 									<Humidite />
 								</div>
 
-								<div className="col-3">
+								<div className="col-md-3">
 									<Heure />
 								</div>
 							</div>
 
 
 							<div className="row justify-content-center" >
-								<div className="col-10">
+								<div className="col-sm-10 col-xs-12">
 									<LineChart />
 								</div>
 							</div>
 						</div>
-					</div>
+                    </div>
+                 
 
-					<div>
-						<BarChart />
-					</div>
+                    <div className="row justify-content-center" >
+                        <div className="col-xs-12">
+                            <BarChart />
+                        </div>
+                    </div>
 
-				</div>
-			</div>
+               </div>
+          </div>
 		);
 	}
 }

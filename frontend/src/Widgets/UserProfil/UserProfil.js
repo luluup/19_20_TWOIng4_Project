@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './UserProfil.css'
+import { Z_NEED_DICT } from 'zlib';
 
 class UserProfil extends Component {
 
@@ -19,9 +20,12 @@ class UserProfil extends Component {
     render() {
         return (
             <div className="profil">
+                <div className="photo">
                 <p>
-                    <img className="userAvatar" src={this.state.avatar}></img>
-                </p>
+                    <img src={this.state.avatar}></img>
+                    </p>
+                </div>
+                <div className="infos">
                 <p>
                     Identifiant : {this.state.userID}
                 </p>
@@ -37,7 +41,8 @@ class UserProfil extends Component {
                 </p>
                 <p>
                    Taille de la maison : {this.state.houseSize}
-                </p>
+                    </p>
+                    </div>
             </div>
 
         );

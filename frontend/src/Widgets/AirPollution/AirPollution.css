@@ -1,13 +1,29 @@
 .icon_pollution img {
-	height: 90px;
+    width:100%;
 }
-.airpollution{
-	background-color: rgb(240, 239, 241);
-	box-shadow:1px 1px 3px rgba(153, 153, 153, 0.445);
-	border-radius: 0.5em;
-	text-align: center;
-	text-align: center;
-	font-weight: bolder;
-	margin-top: 2em;
+.airpollution {
+    background-color: rgb(240, 239, 241);
+    box-shadow: 2px 2px 2px rgba(153, 153, 153, 0.445);
+    border-radius: 0.5em;
+    text-align: center;
+    margin-top: 2em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-family: 'Times New Roman', sans-serif;
+    color: #000000;
+    font-size: 1em;
+}
 
+
+@media (max-width: 768px) {
+    .airpollution {
+        margin-right: 5em;
+        margin-left: 5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+.num_pollution{
+    padding-top:1.1em;
 }

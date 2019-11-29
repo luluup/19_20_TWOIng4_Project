@@ -74,6 +74,8 @@ export default class BarChartW extends PureComponent {
 
     render() {
         return (
+            <div className="barChart">
+
             <div className="bar">
                 <p className = "titre">Températures minimales/maximales des 3 derniers mois par pays</p>
                 <BarChart
@@ -93,7 +95,8 @@ export default class BarChartW extends PureComponent {
                     <Bar dataKey="minimal" fill="#06ed44" />
                     <Bar dataKey="maximal" fill="#ff0551" />
                 </BarChart>
-            </div>
+                </div>
+                </div>
         );
     }
 }

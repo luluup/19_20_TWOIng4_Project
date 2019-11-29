@@ -7,7 +7,7 @@ class AirPollution extends Component {
 		super(props);
 		this.state = {
 			titre : "Air Pollution",
-			icon: "https://www.icone-png.com/png/27/26653.png",
+            icon: "https://www.airparif.asso.fr/_img/curseur_citeair_total.png",
 			airpollution: 3.1
 		}
 	}

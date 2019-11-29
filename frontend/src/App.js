@@ -12,7 +12,7 @@ import { Navbar, Nav, NavItem, NavLink, NavbarBrand } from 'reactstrap';
 class App extends Component {
 	render() {
 		return (
-			<div>
+			<div className>
 				<Router>
 					<Navbar color="light" light expand="md">
 						<NavbarBrand>Dashboard</NavbarBrand>

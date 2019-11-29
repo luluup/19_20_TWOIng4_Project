@@ -1,7 +1,10 @@
-.formulaire{
-
-    background:linear-gradient(rgba(240, 236, 236, 0.979),transparent);
-    background-color:rgb(211, 22, 116);
+.formulaire {
+    margin-right: 3em;
+}
+.container-fluid {
+    background-color: #FDFBFB;
+    width: 100%;
+    padding-bottom:2em;
 }
 
 .nom{
@@ -10,11 +13,33 @@
 }
 
 
+@media (max-width: 768px) {
+    .nom {
+        text-align:center;
+    }
+}
+
+
 .prenom{
 	margin-left: 1.2em;
 	margin-right: 1em;
 }
+@media (max-width: 768px) {
+    .prenom {
+        text-align: center;
+    }
+}
+
 .bouton{
 		margin-left: 2em;
 
+}
+.test {
+    text-align: center;
+  
+    font-family: 'Times New Roman', sans-serif;
+    color: #000000;
+    font-size: 1.8em;
+    text-align: center;
+    padding-top: 0.3em;
 }

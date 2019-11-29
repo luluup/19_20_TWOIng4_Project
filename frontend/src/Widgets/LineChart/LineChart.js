@@ -29,8 +29,9 @@ export default class LineChartW extends PureComponent {
   render() {
     return (
       <div className = "line">
-        <p className="titre">Humidité</p>
-        <LineChart
+            <p className="titre">Humidité</p>
+            <div className="test">
+            <LineChart
           width={500}
           height={200}
           data={data}
@@ -41,7 +42,8 @@ export default class LineChartW extends PureComponent {
           <Legend />
           <Line type="monotone" dataKey="humidity" stroke="#8884d8" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="airquality" stroke="#82ca9d" />
-        </LineChart>
+                </LineChart>
+                </div>
 
       </div>
     );

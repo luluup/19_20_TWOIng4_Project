@@ -1,14 +1,27 @@
 .icon_temperature img {
-	height: 100px;
+	height: 4em;
 }
-.temperature{
-	background-color: #f8f9f9;
-	box-shadow:1px 1px 3px rgba(153, 153, 153, 0.445);
-	border-radius: 0.5em;
-	text-align: center;
-	text-align: center;
-	font:1em Arial;
-	font-weight: bolder;
-	margin-top: 2em;
+.temperature {
+    background-color: rgb(240, 239, 241);
+    box-shadow: 2px 2px 2px rgba(153, 153, 153, 0.445);
+    border-radius: 0.5em;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 2em;
+    font-family: 'Times New Roman', sans-serif;
+    color: #000000;
+    margin-bottom:4em;
+    padding-bottom:0.006em;
+}
 
+@media (max-width: 768px) {
+    .temperature {
+        margin-right: 5em;
+        margin-left: 5em;
+        margin-bottom:1em;
+    }
+}
+.titre {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }

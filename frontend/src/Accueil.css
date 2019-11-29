@@ -2,3 +2,6 @@
     background:linear-gradient(rgba(10, 10, 10, 0.979),transparent);
     background-color:rgb(16, 103, 233)
 }
+.container-fluid {
+    background-color: #FDFBFB;
+}
