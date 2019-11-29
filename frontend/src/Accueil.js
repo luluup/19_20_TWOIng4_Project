@@ -59,14 +59,13 @@ class Accueil extends Component {
 						</div>
                     </div>
                  
-
+			</div>
                     <div className="row justify-content-center" >
-                        <div className="col-xs-12">
+                        <div className="col-sm-10 col-xs-12">
                             <BarChart />
                         </div>
                     </div>
 
-               </div>
           </div>
 		);
 	}

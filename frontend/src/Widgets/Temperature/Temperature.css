@@ -10,7 +10,7 @@
     margin-top: 2em;
     font-family: 'Times New Roman', sans-serif;
     color: #000000;
-    margin-bottom:4em;
+    margin-bottom:1em;
     padding-bottom:0.006em;
 }
 
@@ -21,7 +21,17 @@
         margin-bottom:1em;
     }
 }
-.titre {
-    padding-top: 1em;
-    padding-bottom: 1em;
+
+
+.temperature:hover{
+    background-color: #79c8fd;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
 }

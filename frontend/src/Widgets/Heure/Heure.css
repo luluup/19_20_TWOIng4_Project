@@ -2,11 +2,11 @@
     background-color: rgb(240, 239, 241);
     box-shadow: 2px 2px 2px rgba(153, 153, 153, 0.445);
     border-radius: 0.5em;
-    font-family: 'Times New Roman', sans-serif;
+    font-family: Verdana, sans-serif;
     color: #000000;
     font-size: 1em;
     text-align:center;
-    padding-bottom:1em;
+    margin-top: 0.5em;
 }
 .horloge{
     text-align:center;
@@ -19,4 +19,17 @@
         margin-top: 1em;
         margin-bottom: 1em;
     }
+}
+
+.heure:hover{
+    background-color: #79c8fd;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
 }

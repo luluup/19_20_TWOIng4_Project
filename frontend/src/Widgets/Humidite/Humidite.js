@@ -5,9 +5,12 @@ import './Humidite.css'
 const Humidite = (props) => {
   return (
     <div className="humidite">
-        <p>Humidite</p>
+      Humidite
       <div className="text-center">75%</div>
-      <Progress value={75} />
+      <Progress multi>
+        <Progress bar color="blue" value="175"/>
+        <Progress bar color="white" value="100"/>
+        </Progress>
     </div>
   );
 };

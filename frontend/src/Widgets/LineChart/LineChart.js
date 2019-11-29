@@ -40,8 +40,8 @@ export default class LineChartW extends PureComponent {
           <XAxis dataKey="name" interval="preserveEnd" />
           <YAxis interval="preserveEnd" />
           <Legend />
-          <Line type="monotone" dataKey="humidity" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="airquality" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="humidity" stroke="#f205f0" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="airquality" stroke="#1cf205" />
                 </LineChart>
                 </div>
 

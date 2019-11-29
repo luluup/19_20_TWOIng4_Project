@@ -7,30 +7,29 @@ import Formulaire from './Formulaire/Formulaire'
 import { Navbar, Nav, NavItem, NavLink, NavbarBrand } from 'reactstrap';
 
 
-
-
 class App extends Component {
 	render() {
 		return (
-			<div className>
-				<Router>
-					<Navbar color="light" light expand="md">
-						<NavbarBrand>Dashboard</NavbarBrand>
+			<div className="navbar1">
+				<Router >
+					<Row>
+					<Navbar light expand="md">
+						<Col className="dashboard" xs={{size:1, offset:0}}><NavbarBrand>Dashboard</NavbarBrand></Col>
 						<Nav className="mr-auto" navbar>
-							<NavItem>
+							<Col xs={{size:1, offset:2}}><NavItem>
 								<NavLink><Link to="/Accueil">Accueil</Link></NavLink>
+							</NavItem></Col>
 
-							</NavItem>
-
-							<NavItem>
+							<Col xs={{size:1, offset:3}}><NavItem>
 								<NavLink><Link to="/Formulaire/Formulaire">Formulaire</Link></NavLink>
-							</NavItem>
+							</NavItem></Col>
 						</Nav>
 					</Navbar>
 					<Switch>
 						<Route exact path="/Accueil" component={Accueil} />
 						<Route path="/Formulaire" component={Formulaire} />
 					</Switch>
+					</Row>
 				</Router>
 			</div>
 		);
