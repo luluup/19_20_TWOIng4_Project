@@ -7,10 +7,12 @@ const Humidite = (props) => {
     <div className="humidite">
       Humidite
       <div className="text-center">75%</div>
-      <Progress multi>
+
+          <Progress multi className="progress">
         <Progress bar color="blue" value="175"/>
         <Progress bar color="white" value="100"/>
         </Progress>
+      
     </div>
   );
 };

@@ -29,7 +29,7 @@ class Formulaire extends Component {
                             </div>
 
                             <div className="row">
-                            <button type="button" className="bouton btn btn-light col-offset-3 col-1  ">Submit</button>
+                            <button type="button" className="bouton btn btn-light">Submit</button>
                             </div>
 
                         </Form>
