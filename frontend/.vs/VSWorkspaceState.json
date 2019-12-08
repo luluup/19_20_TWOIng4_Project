@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Widgets",
-    "\\src\\Widgets\\LineChart"
+    "\\src\\Widgets"
   ],
-  "SelectedNode": "\\src\\Widgets\\LineChart\\LineChart.js",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }

@@ -21,7 +21,7 @@ class App extends Component {
 									<Col xs={{ size: 1, offset: 2 }}>
 										<NavItem>
 											<NavLink>
-												<Link to="/Accueil">Accueil</Link>
+												<Link to="/">Accueil</Link>
 											</NavLink>
 										</NavItem>
 									</Col>
@@ -38,7 +38,7 @@ class App extends Component {
 						</Col>
 					</Navbar>
 					<Switch>
-						<Route exact path="/Accueil" component={Accueil} />
+						<Route exact path="/" component={Accueil} />
 						<Route path="/Formulaire" component={Formulaire} />
 					</Switch>
 				</Row>
