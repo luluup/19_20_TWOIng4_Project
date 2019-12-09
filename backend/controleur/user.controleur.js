@@ -17,19 +17,20 @@ exports.findAll = (req, res) => {
         });
 };
 
-// GET user par id
-exports.find_user = (req, res) => {
+// GET location user par id
+exports.userLocation = (req, res) => {
     id = mongoose.Types.ObjectId(req.params.id)
     User.findById(id)
         .then(user => {
-           
+            console.log(user);
             if (!user) {
                 res.status(404).send({ success: false, msg: 'User non trouve' });
             } else {
-                res.send(user);
+                res.send(user.location);
             }
         })
 };
+
 
 // AJOUT user
 exports.post = (req, res) => {
@@ -78,3 +79,5 @@ exports.update = (req, res) => {
         console.log("User update");
       })
 };
+
+
