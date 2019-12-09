@@ -1,8 +1,9 @@
 const Sensor = require('../schema/sensor.schema.js');
-/*
+
 exports.findAll = (req, res) => {
+    console.log("Find sensor");
     Sensor.find()
-        .then(users => {
+        .then(sensors => {
             console.log(sensors);
             res.send(sensors);
         })
@@ -12,4 +13,3 @@ exports.findAll = (req, res) => {
             });
         });
 };
-*/

@@ -10,8 +10,8 @@ const dbName = "DashboardProject";
 const dbURL = `mongodb://localhost:27017/${dbName}`;
 var app = express();
 
-/*var hostname = 'localhost';
-var port = 3000;*/
+var hostname = 'localhost';
+var port = 3000;
 
 
 var indexRouter = require("./routes/index");
