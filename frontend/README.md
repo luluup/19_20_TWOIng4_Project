@@ -14,7 +14,7 @@ Rathery Amandine et Sternberger Lucie
 
 Formulaire : Récupère les informations d'un user et le crée dans la database
 
-Route correspondante à /admin : /Formulaire
+Route correspondante à /admin : /Formulaire/Formulaire
 
 
 
