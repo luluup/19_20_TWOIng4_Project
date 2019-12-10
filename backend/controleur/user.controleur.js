@@ -18,7 +18,7 @@ exports.findAll = (req, res) => {
 };
 
 // GET location user par id
-exports.userLocation = (req, res) => {
+exports.find_user = (req, res) => {
     id = mongoose.Types.ObjectId(req.params.id)
     User.findById(id)
         .then(user => {
@@ -26,7 +26,7 @@ exports.userLocation = (req, res) => {
             if (!user) {
                 res.status(404).send({ success: false, msg: 'User non trouve' });
             } else {
-                res.send(user.location);
+                res.send(user);
             }
         })
 };

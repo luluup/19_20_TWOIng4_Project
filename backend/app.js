@@ -20,6 +20,8 @@ var userRouter = require('./routes/user');
 var sensorRouter = require('./routes/sensor');
 var measureRouter = require('./routes/measure');
 
+const cors = require('cors');
+app.use(cors());
 
 app.use(logger("dev"));
 app.use(express.json());
