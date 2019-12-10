@@ -1,6 +1,6 @@
 .formulaire {
     margin-right: 3em;
-    height: 30em;
+    height: 38em;
 }
 .container-fluid {
     background-color: #FDFBFB;
@@ -15,8 +15,14 @@
 
 @media (max-width: 768px) {
     .nom {
-        text-align:center;
+        text-align: center;
+     
     }
+    .formulaire {
+        margin-left: 3em;
+    }
+
+  
 }
 
 

@@ -16,5 +16,8 @@ Formulaire : Récupère les informations d'un user et le crée dans la database
 
 Route correspondante à /admin : /Formulaire/Formulaire
 
+Liens pour la video :
+https://www.loom.com/share/70cdf2dee7fe45d1a24e24437a7ef265
+
 
 
