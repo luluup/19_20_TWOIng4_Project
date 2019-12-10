@@ -36,30 +36,6 @@ class UserProfil extends Component {
         })
     }
 
-    /*async getData() {
-        try {
-            console.log("Get data function");
-            const response = await axios.get('http://localhost:3000/user/5ddb94c6fc13ae640c000027');
-            this.setState({ pays: response.data});
-            this.setState({personsInHouse :response.data.personsInHouse});
-
-        } catch(error){
-            console.log("Inside error");
-            console.log(error);
-        }
-        /*.then(response => {
-            
-            console.log('je get dans api');
-            console.log(response.data);
-            //this.setState({pays : response.data.message});
-        })
-        .catch(function (error) {
-            console.log("test");
-            console.log(error);
-
-        });
-    }*/
-
     render() {
         return (
             <div className="profil">

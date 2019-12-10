@@ -1,5 +1,7 @@
 RATHERY Amandine et Sternberger Lucie
 
+Lien video loom : https://www.loom.com/share/70cdf2dee7fe45d1a24e24437a7ef265
+
 Lien trello : https://trello.com/b/eAu8vx5M/projet-react
 
 Lien wireframes mockflow : https://wireframepro.mockflow.com/view/Md22e7c0b8f920e034e79b4a561369d661573652984779#/page/ed8ded5ac89c48ffa20872154df9d792
