@@ -15,8 +15,9 @@ const sensorSchema = new mongoose.Schema({
     userID: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
+        ref: 'User'
     }
 
-}, {collection: 'Sensor'});
-module.exports = mongoose.model('Snesor', sensorSchema);
+}, { collection: 'Sensor' });
+module.exports = mongoose.model('Sensor', sensorSchema);
 

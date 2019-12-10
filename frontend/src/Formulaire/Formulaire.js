@@ -56,29 +56,41 @@ class Formulaire extends Component {
         this.setState({ inputHouseSize: event.target.value });
     }
     userSubmit = (event) => {
-        alert('Le formulaire a été soumis : ' + this.state.inputLocation);
+        
         event.preventDefault();
-
-        const request = {
-            location: this.inputLocation,
-            personsInHouse: this.inputPersonsInHouse,
-            houseSize: this.inputHouseSize
-        };
-
-
-        /*axios.post('http://localhost:3000/user', request)
-                .then(res => {
-                    console.log(res);
-                    console.log(res.data);
-                })*/
-
-
-        axios.post('http://localhost:3001/users/create', request)
+        /*
+        var request = {
+            location: this.state.inputLocation,
+            personsInHouse: this.state.inputPersonsInHouse,
+            houseSize: this.state.inputHouseSize
+        }
+        alert(this.state.inputLocation);
+         alert(this.state.inputPersonsInHouse);
+        alert(this.state.inputHouseSize);
+        axios.post('http://localhost:27017/user/user.post', request)
             .then((res) => {
+                console.log("jsdnsdn");
+
                 console.log(res.data)
             }).catch((error) => {
                 console.log(error)
             });
+    */
+   
+        alert(this.state.inputLocation);
+        alert(this.state.inputPersonsInHouse);
+        alert(this.state.inputHouseSize);
+
+        axios({
+            method: 'POST',
+            url: 'http://localhost:3000/user',
+            body: [this.state.inputLocation, this.state.inputPersonsInHouse, this.state.inputHouseSize]
+        })
+
+            .then((response) => {
+
+                console.log(response.body);
+            })
 
     }
 
@@ -87,7 +99,7 @@ class Formulaire extends Component {
             <div className="container-fluid" >
                 <div className="formulaire">
 
-                    <form onSubmit={this.userSubmit}>
+                    <form  onSubmit={this.userSubmit}>
                         <div className="row justify-content-center">
                             <div className="test">
                                 <p>Rentrez les informations de l'utilisateur</p>
@@ -123,15 +135,6 @@ class Formulaire extends Component {
         );
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 

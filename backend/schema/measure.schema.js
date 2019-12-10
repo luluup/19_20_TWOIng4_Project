@@ -15,12 +15,15 @@ const measureSchema = new mongoose.Schema({
     sensorID: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
+        ref: 'Sensor'
     },
 
     value: {
         type: Number,
         required: true,
     }
+},
+    { collection: 'Measure' });
 
-});
+
 module.exports = mongoose.model('Measure', measureSchema);

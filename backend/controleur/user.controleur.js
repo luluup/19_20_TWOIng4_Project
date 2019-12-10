@@ -4,7 +4,7 @@ const querystring = require('querystring');
 
 // REQUETES CRUD USER
 
-// GET tous les users
+/*GET tous les users*/
 exports.findAll = (req, res) => {
     console.log("Find User");
     User.find()
@@ -17,12 +17,12 @@ exports.findAll = (req, res) => {
         });
 };
 
-// GET location user par id
+/*GET 1 user by ID*/
 exports.find_user = (req, res) => {
     id = mongoose.Types.ObjectId(req.params.id)
     User.findById(id)
         .then(user => {
-            console.log(user);
+
             if (!user) {
                 res.status(404).send({ success: false, msg: 'User non trouve' });
             } else {
@@ -32,7 +32,7 @@ exports.find_user = (req, res) => {
 };
 
 
-// AJOUT user
+/*AJOUT user*/
 exports.post = (req, res) => {
     console.log("Test post");
 
@@ -63,21 +63,19 @@ exports.delete = (req, res) => {
     console.log("Delete User");
 
     User.findByIdAndRemove(req.params.id)
-    .then(user => {
-      res.send('User supprime');
-      console.log("User supprime");
-    })
+        .then(user => {
+            res.send('User supprime');
+            console.log("User supprime");
+        })
 };
 
 // UPDATE USER PAR ID
 exports.update = (req, res) => {
     console.log("Update User");
 
-    User.findOneAndUpdate( {_id : req.params.id}, {location: req.body.location, personsInHouse : req.body.personsInHouse, houseSize : req.body.houseSize})
-    .then(user => {
-        res.send('User update :' + req.params.id);
-        console.log("User update");
-      })
+    User.findOneAndUpdate({ _id: req.params.id }, { location: req.body.location, personsInHouse: req.body.personsInHouse, houseSize: req.body.houseSize })
+        .then(user => {
+            res.send('User update :' + req.params.id);
+            console.log("User update");
+        })
 };
-
-
