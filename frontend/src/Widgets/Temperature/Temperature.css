@@ -1,6 +1,3 @@
-.icon_temperature img {
-	height: 4em;
-}
 .temperature {
     background-color: rgb(240, 239, 241);
     box-shadow: 2px 2px 2px rgba(153, 153, 153, 0.445);

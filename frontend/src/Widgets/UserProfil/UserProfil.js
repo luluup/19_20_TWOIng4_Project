@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './UserProfil.css'
-import { Z_NEED_DICT } from 'zlib';
-import { copyFileSync } from 'fs';
+/*import { Z_NEED_DICT } from 'zlib';
+import { copyFileSync } from 'fs';*/
 import axios from 'axios';
 
 class UserProfil extends Component {

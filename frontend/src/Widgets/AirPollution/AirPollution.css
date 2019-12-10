@@ -1,12 +1,10 @@
-.icon_pollution img {
-    width:100%;
-}
 .airpollution {
     background-color: rgb(240, 239, 241);
     box-shadow: 2px 2px 2px rgba(153, 153, 153, 0.445);
     border-radius: 0.5em;
     text-align: center;
     margin-top: 2em;
+    margin-bottom : 1em;
     font-family: Verdana, sans-serif;
     color: #000000;
     font-size: 1em;
@@ -20,10 +18,6 @@
         margin-top: 1em;
         margin-bottom: 1em;
     }
-}
-
-.num_pollution{
-    padding-top:1.1em;
 }
 
 .airpollution:hover{

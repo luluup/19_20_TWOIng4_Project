@@ -1,27 +1,49 @@
 import React, { Component } from 'react';
-import './AirPollution.css'
+import './AirPollution.css';
+import axios from 'axios';
 
+// Nombre de users
 class AirPollution extends Component {
+
+	componentDidMount() {
+		this.getData();
+	}
 
 	constructor(props) {
 		super(props);
 		this.state = {
-			titre: "Air Pollution",
-			icon: "https://www.airparif.asso.fr/_img/curseur_citeair_total.png",
-			airpollution: 3.1
+			titre: "Nombre de Users",
 		}
+	}
+
+	getData() {
+
+		var cpt = 0;
+
+		axios.get('http://localhost:3000/User')
+			.then(function (response) {
+
+				response.data.forEach(function (element) {
+					cpt++;
+				},
+				);
+			}).then(response => {
+				this.setState({
+					cpt
+				});
+			})
+			.catch(error => {
+				console.log("Inside error");
+				console.log(error);
+			})
 	}
 
 	render() {
 		return (
 			<div className="airpollution">
-				<p>{this.state.titre}</p>
-				<div className="icon_pollution">
-					<img src={this.state.icon} alt="icon" />
-				</div>
-
+				{this.state.titre}
 				<div className="num_pollution">
-					<p>{this.state.airpollution}</p>
+					{this.state.cpt}
 				</div>
 			</div>
 		);

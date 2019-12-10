@@ -1,15 +1,41 @@
 import React, { Component } from 'react';
 import './Temperature.css'
+import axios from 'axios';
 
+// Nombre de capteurs
 class Temperature extends Component {
+
+	componentDidMount() {
+		this.getData();
+	  }
 
 	constructor(props) {
 		super(props);
 		this.state = {
-			titre: "Temperature",
-			icon: "https://i0.wp.com/www.nana-turopathe.com/wp-content/uploads/2015/07/soleil-e1435759702694.png?zoom=1.5&resize=647%2C437&ssl=1",
-			temp: 30
+			titre: "Nombre de capteurs"
 		}
+	}
+
+	getData() {
+
+		var cpt = 0;
+
+		axios.get('http://localhost:3000/Sensor')
+			.then(function (response) {
+
+				response.data.forEach(function (element) {
+					cpt++;
+				},
+				);
+			}).then(response => {
+				this.setState({
+					cpt
+				});
+			})
+			.catch(error => {
+				console.log("Inside error");
+				console.log(error);
+			})
 	}
 
 	render() {
@@ -17,15 +43,7 @@ class Temperature extends Component {
 			<div className="temperature">
 				<div className="titre">
 					{this.state.titre}
-				</div>
-				<div className="icon_temperature">
-
-					<img src={this.state.icon} alt="icon_temp" />
-
-				</div>
-
-				<div className="degre">
-					<p>{this.state.temp} °C</p>
+					<p>{this.state.cpt}</p>
 				</div>
 			</div>
 		);

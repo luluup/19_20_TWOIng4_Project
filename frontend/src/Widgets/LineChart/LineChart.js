@@ -1,51 +1,119 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import './LineChart.css'
+import { Doughnut } from 'react-chartjs-2';
+import axios from 'axios';
 
-import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
-} from 'recharts';
 
-const data = [
-  {
-    name: '1', humidity: 4000, airquality: 2400, amt: 2400,
-  },
-  {
-    name: '2', humidity: 1800, airquality: 4398, amt: 2210,
-  },
-  {
-    name: '3', humidity: 2800, airquality: 3398, amt: 2210,
-  },
-  {
-    name: '4', humidity: 800, airquality: 2498, amt: 210,
-  },
-  {
-    name: '5', humidity: 4800, airquality: 3398, amt: 2210,
-  }
-];
+class LineChart extends Component {
 
-export default class LineChartW extends PureComponent {
-  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/xqjtetw0/';
+    componentDidMount() {
+        this.getData();
+    }
+    constructor(props) {
+        super(props);
+        this.state = {
+            doughnutData: {
+                labels: [],
+                datasets: [{
+                    data: [],
+                    backgroundColor: [
+                        '#7A6B96',
+                        '#BA6AA7',
+                        '#B35A76']
 
-  render() {
-    return (
-      <div className = "line">
-            <p className="titre">Humidité</p>
-            <div className="test">
-            <LineChart
-          width={500}
-          height={200}
-          data={data}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" interval="preserveEnd" />
-          <YAxis interval="preserveEnd" />
-          <Legend />
-          <Line type="monotone" dataKey="humidity" stroke="#f205f0" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="airquality" stroke="#1cf205" />
-                </LineChart>
+                }
+                ]
+            },
+
+            doughnutOptions:
+            {
+
+                title: {
+                    display: true,
+                    text: 'Nombre de capteur humidité, air pollution et temperature',
+                    fontSize: 20
+                },
+                legend: {
+                    display: true,
+                    position: 'right'
+                }
+
+            }
+
+        }
+    }
+
+
+    getData() {
+
+        var data = [];
+        var labels = [];
+        var airPollution = [];
+        var humidity = [];
+        var temperature = [];
+        var compt1 = 0;
+        var compt2 = 0;
+        var compt3 = 0;
+
+
+
+        axios.get('http://localhost:3000/measure')
+            .then(function (response) {
+
+                response.data.forEach(function (element) {
+
+                    if (element.type === "humidity") {
+                        compt1++;
+
+
+                    }
+                    else if (element.type === "temperature") {
+                        compt2++;
+
+
+                    }
+                    else if (element.type === "airPollution") {
+                        compt3++;
+
+                    }
+
+                })
+                data.push(compt1);
+                data.push(compt2);
+                data.push(compt3);
+
+                labels.push("Humidity");
+                labels.push("Temperature");
+                labels.push("AirPollution");
+
+            }).then(response => {
+                this.setState({
+                    doughnutData: {
+                        labels,
+                        datasets: [{
+                            data
+                        }]
+                    }
+                });
+            })
+            .catch(error => {
+                console.log("Inside error");
+                console.log(error);
+            })
+    }
+
+
+    render() {
+        return (
+            <div classname="doughnut">
+
+                <div className="line">        
+                    <Doughnut data={this.state.doughnutData}
+                        options={this.state.doughnutOptions} />
                 </div>
-
-      </div>
-    );
-  }
+            </div>
+        )
+    }
 }
+
+export default LineChart;
