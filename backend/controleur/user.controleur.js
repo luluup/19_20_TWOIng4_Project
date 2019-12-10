@@ -37,7 +37,8 @@ exports.post = (req, res) => {
     console.log("Test post");
 
     if (!req.body.location || !req.body.personsInHouse || !req.body.houseSize) {
-        console.log("Ajout impossible : champ vide");
+        console.log('Ajout impossible : champ vide');
+        console.log("location" +req.body.location);
         res.send('Ajout impossible : champ vide');
     }
 

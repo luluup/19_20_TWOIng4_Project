@@ -5,31 +5,6 @@ import axios from 'axios';
 
 class Formulaire extends Component {
 
-    /*
- 
-   
- 
-     
-     userSubmit = (event) => {
- 
-         alert('Un essai a été envoyé : ' + this.state.value);
-         event.preventDefault();
- 
-   
-         var request = {
-             location:this.inputLocation,
-             personsInHouse:this.inputPersonsInHouse,
-             houseSize:this.inputHouseSize
-         }
-       
-         axios.post('mongodb://localhost:27017/DashboardProject/User', request)
-             .then(res => {
-                 console.log(res);
-                 console.log(res.data);
-             })
-     }*/
-
-
     constructor(props) {
         super(props)
         this.state = {
@@ -56,42 +31,21 @@ class Formulaire extends Component {
         this.setState({ inputHouseSize: event.target.value });
     }
     userSubmit = (event) => {
-        
+
         event.preventDefault();
-        /*
+
         var request = {
             location: this.state.inputLocation,
             personsInHouse: this.state.inputPersonsInHouse,
             houseSize: this.state.inputHouseSize
         }
-        alert(this.state.inputLocation);
-         alert(this.state.inputPersonsInHouse);
-        alert(this.state.inputHouseSize);
-        axios.post('http://localhost:27017/user/user.post', request)
+        axios.post('http://localhost:3000/user', request)
             .then((res) => {
-                console.log("jsdnsdn");
-
                 console.log(res.data)
+                alert("Vous avez ajoute : " + this.state.inputLocation)
             }).catch((error) => {
                 console.log(error)
             });
-    */
-   
-        alert(this.state.inputLocation);
-        alert(this.state.inputPersonsInHouse);
-        alert(this.state.inputHouseSize);
-
-        axios({
-            method: 'POST',
-            url: 'http://localhost:3000/user',
-            body: [this.state.inputLocation, this.state.inputPersonsInHouse, this.state.inputHouseSize]
-        })
-
-            .then((response) => {
-
-                console.log(response.body);
-            })
-
     }
 
     render() {
@@ -99,7 +53,7 @@ class Formulaire extends Component {
             <div className="container-fluid" >
                 <div className="formulaire">
 
-                    <form  onSubmit={this.userSubmit}>
+                    <form onSubmit={this.userSubmit}>
                         <div className="row justify-content-center">
                             <div className="test">
                                 <p>Rentrez les informations de l'utilisateur</p>
@@ -115,20 +69,20 @@ class Formulaire extends Component {
 
 
                         <div className="form-group row">
-                            <label for="PersonInHouse" className="prenom col-sm-1 col-form-label">PersonInHouse</label>
+                            <label for="PersonInHouse" className="prenom col-sm-1 col-form-label">NbInHouse</label>
                             <div className="col-sm-5">
                                 <Input type="text" name="PersonInHouse" id="PersonInHouse" placeholder=" PersonInHouse" onChange={this.changePersonsInHouse} />
                             </div>
                         </div>
 
                         <div className="form-group row">
-                            <label for="houseSize" className="prenom col-sm-1 col-form-label">houseSize</label>
+                            <label for="houseSize" className="prenom col-sm-1 col-form-label">HouseSize</label>
                             <div className="col-sm-5">
                                 <Input type="text" name="houseSize" id="houseSize" placeholder=" HouseSize" onChange={this.changeHouseSize} />
                             </div>
                         </div>
 
-                        <input type="submit" value="Envoyer" />
+                        <input className="bouton" type="submit" value="Envoyer" />
                     </form>
                 </div>
             </div >

@@ -1,26 +1,24 @@
 RATHERY Amandine et Sternberger Lucie
 
+Lien trello : https://trello.com/b/eAu8vx5M/projet-react
 
-# Projet de fin de semestre
+Lien wireframes mockflow : https://wireframepro.mockflow.com/view/Md22e7c0b8f920e034e79b4a561369d661573652984779#/page/ed8ded5ac89c48ffa20872154df9d792
 
-A lire impérativement avant de commencer quoi que ce soit, ce sont les règles que vous devrez appliquer tout au long du semestre:
+Lien documentation Postman : https://documenter.getpostman.com/view/9595426/SWE6cJvk?fbclid=IwAR066BThuaxMglTdf7YlYbxgkgQFC5mwxT-31-n_IRiqR-uLGnh5oA_64wM&version=latest
 
-<p align="center">
- <a href="https://github.com/clementAC/Instructions-Technologies-Web-OCRES-Ing4/blob/master/README.md">Règles pour le semestre</a>
-</p>
 
-## Introduction
+Installation : 
 
-Ce repo git contient deux repertoires. L'un concerne la partie backend et l'autre la partie frontend.
+        mongo 
 
-Les deux repertoires ont été initialisé pour vous aider à démarrer le projet dans les meilleures conditions.
+        npm install react-router-dom
 
-Chacun de ces repertoires contient un README.md qui vous pouvez vous approprier. Nous vous encourageons à le faire en y mettant toute les informations nécessaires à la compréhension de votre projet
+        npm install axios
+        npm i cors
 
-## Instructions
+        npm i body-parser
+        npm install randomcolor
 
-Les instructions sont à retrouver dans le pdf mis à disposition sur campus.
+        npm run storybook
 
-**Le non respect de ces instructions entraînera des pertes de points alors prenez le temps de tout lire et de poser des questions si vous ne comprenez pas**
-
-Pour rappel, la probabilité de recevoir une réponse à un mail envoyé quelques heures avant le rendu est très proche de 0.
+        npm start

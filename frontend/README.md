@@ -1,8 +1,20 @@
 # Frontend
 
-Liens du wireFrame : https://wireframepro.mockflow.com/editor.jsp?editor=off&perm=Owner&projectid=Md22e7c0b8f920e034e79b4a561369d661573652984779&publicid=4bfba807066d4a2caf334d93856de766&redirect=yes#/page/ed8ded5ac89c48ffa20872154df9d792
+Rathery Amandine et Sternberger Lucie
 
-7 widgets réutilisables
-Storybook fait
+
+7 widgets et leur storybook :
+        UserProfil : GET les informations dans notre API d'un user 
+        Heure : GET de l'heure d'une API externe
+        LineChart : Affichage en doughnut, GET de notre API le nombre de capteurs humidité, air pollution et temperature
+        BarChart : Graphique en barres, GET de notre API les locations des users et le nombre de personsInHouse
+        Temperature : GET de notre API le nombre de capteurs
+        AirPollution : GET de notre API le nombre de users
+        Humidite : GET de notre API la moyenne de la valeur humidity de tous les capteurs
+
+Formulaire : Récupère les informations d'un user et le crée dans la database
+
+Route correspondante à /admin : /Formulaire
+
 
 
